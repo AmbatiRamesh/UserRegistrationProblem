@@ -82,4 +82,15 @@ public class Validation {
             System.out.println("Password is Invalid--!!");
         }
     }
+    public void checkEmail2() {
+        System.out.println("-----------------");
+        System.out.println("Enter Email Id: ");
+        String email = scanner.next();
+        if (Pattern.matches("^[a-zA-Z]{3,}[+-.]?[A-za-z0-9]*[@]{1}[a-z]+[.]?[a-z]*[.]?[a-z]", email)) {
+            System.out.println("Email is Valid---!!");
+            checkEmail2();
+        } else {
+            System.out.println("Email is Invalid--!!");
+        }
+    }
 }

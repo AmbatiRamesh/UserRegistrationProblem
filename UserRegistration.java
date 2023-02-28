@@ -11,5 +11,6 @@ public class UserRegistration {
         validation.checkPasswordRule2();
         validation.checkPasswordRule3();
         validation.checkPasswordRule4();
+        validation.checkEmail2();
     }
 }
