@@ -8,5 +8,6 @@ public class UserRegistration {
         validation.checkEmail();
         validation.checkPhoneNumber();
         validation.checkPasswordRule1();
+        validation.checkPasswordRule2();
     }
 }
