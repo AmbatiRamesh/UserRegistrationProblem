@@ -22,4 +22,14 @@ public class Validation {
             System.out.println("LastName is Invalid--!!");
         }
     }
+    public void checkEmail() {
+        System.out.println("-----------------");
+        System.out.println("Enter Email : ");
+        String email = scanner.next();
+        if (Pattern.matches("^[a-zA-Z]{3,}[.]?[A-za-z0-9]{3,}[.]?[a-zA-Z]+[@]{1}[a-z]+[.]?[a-z]*", email)) {
+            System.out.println("Email is Valid---!!");
+        } else {
+            System.out.println("Email is Invalid--!!");
+        }
+    }
 }
