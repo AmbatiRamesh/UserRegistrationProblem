@@ -42,4 +42,14 @@ public class Validation {
             System.out.println("PhoneNumber is Invalid--!!");
         }
     }
+    public void checkPasswordRule1() {
+        System.out.println("-----------------");
+        System.out.println("Enter Password : ");
+        String password  = scanner.nextLine();
+        if (Pattern.matches("^[a-zA-z]{8,}", password)) {
+            System.out.println("Password is Valid---!!");
+        } else {
+            System.out.println("Password is Invalid--!!");
+        }
+    }
 }

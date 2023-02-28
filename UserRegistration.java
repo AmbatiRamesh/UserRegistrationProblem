@@ -7,5 +7,6 @@ public class UserRegistration {
         validation.checkLastName();
         validation.checkEmail();
         validation.checkPhoneNumber();
+        validation.checkPasswordRule1();
     }
 }
